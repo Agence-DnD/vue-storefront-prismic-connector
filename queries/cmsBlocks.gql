@@ -1,0 +1,11 @@
+query listCmsBlocks {
+  prismicCmsBlocks {
+    id
+    identifier
+    title
+    content
+    lang
+    creation_time
+    update_time
+  }
+}

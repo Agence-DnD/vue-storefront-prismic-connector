@@ -1,0 +1,11 @@
+query listCmsPages {
+  prismicCmsPages {
+    id
+    slug
+    title
+    content
+    lang
+    creation_time
+    update_time
+  }
+}
