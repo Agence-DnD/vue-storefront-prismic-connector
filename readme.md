@@ -4,6 +4,8 @@
 
 Vue Storefront - Prismic Connector is a [Vue Storefront](https://github.com/DivanteLtd/vue-storefront) extension that allows you to display CMS blocks and pages contents from the headless CMS Prismic.
 
+Official extension page on the Vue Storefront forum: [Vue Storefront - Prismic Connector](https://forum.vuestorefront.io/t/prismic-connector/160)
+
 ### Documentation:
 
 Vue Storefront - Prismic Connector complete documentation is available [here](doc/summary.md).
