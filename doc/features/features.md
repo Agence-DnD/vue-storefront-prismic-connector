@@ -38,7 +38,7 @@ import PrismicCmsPage from 'src/modules/dnd-prismic-cms/components/CmsPage/View'
 In the file `src/themes/default/router/index.js`:
 
 ```typescript
-import PrismicCmsPage from 'src/modules/dnd-prismic-cms/components/CmsPage/View'
+const PrismicCmsPage = () => import(/* webpackChunkName: "prismic-cms" */ 'src/modules/dnd-prismic-cms/components/CmsPage/View')
 
 //...
 { name: 'demo-prismic-promo', path: '/summer-promotion', component: PrismicCmsPage, props: {slug: 'summer-promotion'} }
@@ -56,7 +56,7 @@ Example:
 
 ```typescript
   //...
-  import PrismicCmsPage from 'src/modules/dnd-prismic-cms/components/CmsPage/View'
+  const PrismicCmsPage = () => import(/* webpackChunkName: "prismic-cms" */ 'src/modules/dnd-prismic-cms/components/CmsPage/View')
   //...
   { name: 'page-not-found', path: '/page-not-found', component: PageNotFound },
   { name: 'cms-page-sync', path: '/cms-page-sync', component: CmsData, props: {identifier: 'about-us', type: 'Page', sync: true} },

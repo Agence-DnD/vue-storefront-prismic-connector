@@ -22,7 +22,7 @@ Example:
 
 ```typescript
   //...
-  import PrismicCmsPage from 'src/modules/dnd-prismic-cms/components/CmsPage/View'
+  const PrismicCmsPage = () => import(/* webpackChunkName: "prismic-cms" */ 'src/modules/dnd-prismic-cms/components/CmsPage/View')
   //...
   { name: 'page-not-found', path: '/page-not-found', component: PageNotFound },
   { name: 'cms-page-sync', path: '/cms-page-sync', component: CmsData, props: {identifier: 'about-us', type: 'Page', sync: true} },
