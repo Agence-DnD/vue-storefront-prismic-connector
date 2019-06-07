@@ -1,6 +1,6 @@
 {
   "name": "vue-storefront-prismic-connector",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Agence Dn'D <contact@dnd.fr>",
   "description": "Vue Storefront - Prismic Connector for Vue Storefront",
   "repository": "github:Agence-DnD/vue-storefront-prismic-connector",

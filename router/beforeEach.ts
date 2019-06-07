@@ -1,5 +1,5 @@
 import { Route } from 'vue-router'
-import store from '@vue-storefront/store'
+import store from '@vue-storefront/core/store'
 
 const PRISMIC_CMS_PAGE_CODE = 'prismic-cms-page'
 

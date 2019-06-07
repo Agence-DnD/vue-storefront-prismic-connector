@@ -2,9 +2,9 @@ import { DndPrismicCmsState } from '../types/DndPrismicCmsState'
 import { ActionTree } from 'vuex';
 import * as types from './mutation-types'
 import config from 'config'
-import SearchAdapterFactory from '@vue-storefront/store/lib/search/adapter/factory'
-import { currentStoreView } from '@vue-storefront/store/lib/multistore'
-import SearchQuery from '@vue-storefront/store/lib/search/searchQuery'
+import { SearchAdapter } from '@vue-storefront/core/lib/search/adapter/graphql/searchAdapter'
+import { currentStoreView } from '@vue-storefront/core/lib/multistore'
+import SearchQuery from '@vue-storefront/core/lib/search/searchQuery'
 
 const CMS_BLOCK_ENTITY_TYPE = 'prismicCmsBlocks'
 const CMS_PAGES_ENTITY_TYPE = 'prismicCmsPages'
@@ -12,8 +12,7 @@ const GRAPHQL_URL = config.server.protocol + '://' + config.graphql.host + ':' +
 
 const storeView = currentStoreView()
 const searchQuery = new SearchQuery()
-const factory = new SearchAdapterFactory()
-let searchAdapter = factory.getSearchAdapter('graphql')
+let searchAdapter = new SearchAdapter()
 
 searchAdapter.registerEntityTypeByQuery(CMS_BLOCK_ENTITY_TYPE, {
   url: GRAPHQL_URL,
